@@ -1,0 +1,193 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+% GENERAL NOTE:  There may be some notes specific to myself.  If you're only interested in my LaTeX source or it doesn't make sense, please disregard it.
+
+\documentclass[letterpaper,11pt]{article}
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=mygreylink     % can put red here to better visualize the links
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.85}
+\definecolor{mygreylink}{gray}{.30}
+\textheight=12.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.385in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}l }
+	  \href{mailto:cgada@uwaterloo.ca}{\Large cgada@uwaterloo.ca}&\textbf{\Huge \hfill Chirag Gada}\\
+	  \href{http://www.github.com/cgada}{\large github.com/cgada}\\
+	 \href{http://cgada.me}{\large cgada.me}&\textbf{ \Large \hfill 2B Software Engineering}\\
+	\end{tabular*}
+\\ 
+\vspace{0.3in}}
+
+% CHANGE HEADER SOURCE HERE
+\mywebheader
+
+%%%%%%%%%%%%%%%%%%%%%%
+\resheading{Skills Summary}
+\\[20pt]
+	\begin{itemize} \itemsep -1pt   
+		\item 
+			{Proficient in OOP principles developed through high school and univerity courses}
+		\item
+			{Extensive knowledge and experience in Web Devlopment (Front-end and Server-side)}		
+		\item 
+			{Experience working with various Javascript libraries like jQuery, Angular.js and Python frameworks like Django, Tasty-Pie }		
+		\item
+			{Experience with processing large amounts of data using RDBMS like MySQL, PostgresSQL}
+		\item
+			{Working knowledge of REST APIs and asynchronous requests developed from past co-op projects} 
+		\item
+			{Strong leadership qualities developed through various workshops and conferences}  
+
+	\end{itemize} % End Skill Summary list
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.1in}
+\resheading{Work Experience}
+\\[20pt]
+	\begin{itemize} \itemsep 15pt
+		\item 
+			\ressubheading{Housing and Residence, University of Waterloo}{May 2014 -- Present}{Residence Life Don}{}
+				{ \normalsize
+				\begin{itemize} \itemsep 4pt
+					\resitem{Supervised a diverse residential community of 30 undergraduates and ensured all residents lived within the rules and regulations set out in the Residence Contract}				
+					\resitem{Assisted residents to adapt to residence life and offered advice, when asked, with reference to personal, social and academic concerns}
+					\resitem{Worked as part of a close-knit group of dons and participated in duty don rotations}
+					\resitem{Represented all the dons in the Residence Council, guiding the council members with planning, budgeting and implementing multiple events}
+				\end{itemize}
+				}
+		\item 
+			\ressubheading{Computer Science Computing Facility}{January 2014 -- April 2014}{Web Developer/Computing Support Assistant}{}
+				{ \normalsize
+				\begin{itemize} \itemsep 4pt
+					\resitem{Part of a 3 member Research Support Group responsible for developing and enhancing web-based software tools}	
+					\resitem{Developed online professor evaluation tool to replace existing scantron based evaluations using the Django framework for Python (\href{http://evalute.uwaterloo.com}{\textbf {evalute.uwaterloo.com}})}
+					\resitem{Increased student feedback to evaluations by 10\% during a faculty wide beta release }
+					\resitem{Developed an Android application in order to scan barcodes and find hardware in internal inventory system}						
+				\end{itemize}
+				}
+		\item 
+			\ressubheading{Trapeze Group}{May 2013 -- August 2013}{Help Desk Technician}{}
+				{ \normalsize
+				\begin{itemize} \itemsep 4pt
+					\resitem{Part of an integrative team that formed the front-line of all Technical Support for a large organization of over 3000 people}
+					\resitem{ Performed hands-on fixes at the desktop level, including installing and upgrading software,  hardware, implementing file backups, and configuring systems and applications}
+					\resitem{Evaluated documented resolutions and analyzed trends for ways to prevent future problems}
+					\resitem{Helped automate and streamline a variety of processes considerably lowering turnaround times}
+				\end{itemize}
+				}
+\end{itemize}  % End Experience list
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.1in}
+\resheading{Projects}
+	{
+	\\[20pt]
+	\begin{itemize} \itemsep 1pt
+		\item \large \href{http://anitor.net}{\textbf {\color {black} AniTor.net}}
+				{ \vspace{-3 mm} \normalsize
+				\begin{itemize} \itemsep 4pt
+					\resitem{Anime aggregator for all ongoing active animes}
+					\resitem{Features include subscription for updates based on fansubs and qualities}
+					\begin{itemize}\itemsep 2pt
+						\item[$\circ$]{Implemented all frontend behaviour including backend integration}
+						\item[$\circ$]{Used Javascript, JQuery, CSS, Django and MySQL}
+					\end{itemize}
+				\end{itemize}
+				}		
+		\item \large \textbf{InQuizitor} (under development)
+				{ \vspace{-3 mm} \normalsize
+				\begin{itemize} \itemsep 4pt 
+					\resitem{Forum for interesting facts, figures and questions}
+					\resitem{Ability to ask questions and receive updates when answers are provided}
+				\end{itemize}
+				}
+	\end{itemize}  % End Projects list
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+\resheading{Education}
+	\\[16pt]
+	\begin{itemize}	\itemsep 3pt
+		\item
+			\ressubheading{\href{http://www.uwaterloo.ca}{ \color {black} University of Waterloo}}{Waterloo, ON}{\href{https://uwaterloo.ca/software-engineering/}{ \color {black} Candidate for Bachelor of Software Engineering}} {Sep. 2012 -- Present}
+				{ \normalsize
+				\begin{itemize} \itemsep 3pt
+					
+					\resitem{\textbf{Relevant Courses:}} \href{http://www.ucalendar.uwaterloo.ca/1213/COURSE/course-SE.html#SE101}{\small  \color {black} Methods of Software Engineering},  \href{http://www.ucalendar.uwaterloo.ca/1213/COURSE/course-ECE.html#ECE222}{\small  \color {black} Digital Computers}, \href{http://www.ucalendar.uwaterloo.ca/1213/COURSE/course-CS.html#CS241}{\small  \color {black} Foundations of Sequential Programs}, \href{http://www.ucalendar.uwaterloo.ca/1213/COURSE/course-CS.html#CS137}{\small  \color {black} Programming Principles}, \href{http://www.ucalendar.uwaterloo.ca/1213/COURSE/course-CS.html#CS138}{ \vspace{1 mm}\small   \color {black}  Data Abstraction and Implementation}
+					
+				\resitem{\textbf{Scholarships:}}
+					\begin{itemize}\itemsep 3pt
+						\item[$\circ$]{University of Waterloo President's Scholarship, 2012}
+						\item[$\circ$]{Engineering International Student Scholarship, 2012, 2013}
+					\end{itemize}
+\end{itemize}}
+			
+	\end{itemize} % End Education list
+
+\resheading{Activities and Interests}
+	{
+	\\[16pt]
+	\normalsize
+	\begin{itemize} \itemsep -7pt
+		\item Attended AMPED Leadership Conference and Leadership Development Conference, 2012 -- 2013
+			\begin{itemize}
+			\item \vspace{-3 mm}{Improved leadership traits and ethical knowledge}
+			\end{itemize}
+		\item Interested in Quizzing/ Trivia and maintained a interesting facts blog (\href{theowlfacts.blogspot.ca}{Owlfacts})
+			\begin{itemize} 
+			\item \vspace{-3 mm}{Regularly updated, informative random facts; received 300 unique visits a month}
+			\end{itemize}
+		\item Other interests include: gaming, hockey, baseball, football and tennis 
+\end{itemize}
+}
+\end{document}
